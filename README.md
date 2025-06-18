@@ -1,6 +1,6 @@
 # TipJar - Proyecto final del Módulo 4 de ETH-Kipu
 
-Asegurate de tener configuradas con npx hardhat vars set "variables" las siguientes variables:
+Asegurate de tener configuradas con  *npx hardhat vars set "nombre de las variables"* las siguientes variables:
 - ALCHEMY_API_KEY
 - SEPOLIA_PRIVATE_KEY (cuenta que deploya el contrato)
 - SEPOLIA_PRIVATE_KEY2 (cuenta que envia el tip)
@@ -17,6 +17,9 @@ Asegurate de tener configuradas con npx hardhat vars set "variables" las siguien
 ### Comandos para Ejecutar los scripts en la terminal:
 
 1. SendTip: npx hardhat run ./scripts/sendtip.ts 
-2. GetBalance: npx hh run ./scripts/getbalance.ts 
-3. Withdraw: npx hh run ./scripts/withdraw.ts 
+2. GetBalance: npx hardhat run ./scripts/getbalance.ts 
+3. Withdraw: npx hardhat run ./scripts/withdraw.ts 
 
+### Comando para correr Tests
+
+- npx hardhat test ./test/TipJar.test.ts
